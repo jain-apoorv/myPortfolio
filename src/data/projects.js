@@ -1,0 +1,44 @@
+export const projects = [
+  {
+    title: "Yatra",
+    duration: "May 2024 - June 2024",
+    image: "/images/ya5traSite.png",
+    summary: "A full-stack tour booking platform.",
+    details: [
+      "A full-stack tour booking platform with tour listings, user authentication, and booking management.",
+      "Built a responsive frontend using ReactJS, Redux Toolkit and React Router with clean UI design.",
+      "Developed a RESTful backend using ExpressJS and MongoDB, following the MVC architecture.",
+      "Implemented secure authentication and authorization using JWT and bcrypt.",
+    ],
+    github: "https://github.com/jain-apoorv/YatraAPI",
+    demo: "https://yatra-8tns.onrender.com/",
+    type: "project",
+  },
+  {
+    title: "Olympic Database Management System",
+    duration: "Nov 2022 - Jan 2023",
+    image: "/images/olympicDatabase.png",
+    summary: "A comprehensive Olympic Database Management System.",
+    details: [
+      "Collaboratively developed a comprehensive Olympic Database Management System to manage and analyze Olympic-related data efficiently.",
+      "Designed ER diagrams, converted them into a relational database schema, and implemented normalization techniques.",
+      "Created and configured the relational database using MySQL and tested SQL queries extensively.",
+    ],
+    ppt: "https://docs.google.com/presentation/d/1P_rYy7p1rh5AQatlQ_i5MY4XkBD0ANem/edit?slide=id.p1#slide=id.p1",
+    type: "project",
+  },
+  {
+    title: "Number Plate Recognition System",
+    duration: "Jun 2022 - Aug 2022",
+    image: "/images/numberPlate.png",
+    summary: "A robust Number Plate Recognition System using computer vision.",
+    details: [
+      "Developed a robust Number Plate Recognition System using computer vision techniques and hardware integration.",
+      "Implemented image processing algorithms with OpenCV and Python for real-time detection and recognition of number plates.",
+      "Utilized pytesseract for OCR to extract alphanumeric characters from number plates.",
+      "Integrated Raspberry Pi, Arduino Uno, and Pi Camera to capture and process images in real-time.",
+    ],
+    pdf: "https://drive.google.com/file/d/1clVjHdSsIKcav_8WJN1Rm1e62v3c32ck/view",
+    type: "project",
+  },
+];
