@@ -16,7 +16,7 @@ function Header() {
       <div className="max-w-6xl mx-auto flex items-center justify-between p-4">
         <div className="flex items-center space-x-4">
           <img
-            src="/images/Alogo.jpg"
+            src="/images/Alogo.png"
             alt="A"
             className="w-14 h-14 rounded-full border-2 border-blue-500 shadow-md"
           />
