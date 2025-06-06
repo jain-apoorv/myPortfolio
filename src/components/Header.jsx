@@ -15,11 +15,11 @@ function Header() {
     <header className="fixed w-full top-0 left-0 bg-gray-900 bg-opacity-90 backdrop-blur-sm shadow-md z-50">
       <div className="max-w-6xl mx-auto flex items-center justify-between p-4">
         <div className="flex items-center space-x-4">
-          <img
+          {/* <img
             src="/images/profileImage.PNG"
             alt="Apoorv Jain"
             className="w-14 h-14 rounded-full border-2 border-blue-500 shadow-md"
-          />
+          /> */}
           <h1 className="text-xl font-bold tracking-wide">Apoorv Jain</h1>
         </div>
         <a
