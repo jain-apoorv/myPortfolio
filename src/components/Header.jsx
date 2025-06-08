@@ -22,37 +22,32 @@ function Header() {
           />
           <h1 className="text-xl font-bold tracking-wide">Apoorv Jain</h1>
         </div>
-        <a
-          href="https://drive.google.com/file/d/1qhEUFfQzxkDBKCSfiYTEmSwKIjkWc3Iu/view?usp=sharing"
-          className="text-white hover:text-blue-400 text-lg"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Resume
-        </a>
 
-        <a href="#projects" className="text-white hover:text-blue-400 text-lg">
-          Projects
-        </a>
-        <a
-          href="#publications"
-          className="text-white hover:text-blue-400 text-lg"
-        >
-          Publications
-        </a>
+        {/* Desktop navigation */}
+        <div className="hidden md:flex space-x-6 items-center">
+          <a
+            href="https://drive.google.com/file/d/1qhEUFfQzxkDBKCSfiYTEmSwKIjkWc3Iu/view?usp=sharing"
+            className="text-white hover:text-blue-400 text-lg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Resume
+          </a>
 
-        <nav className="hidden md:flex space-x-6 items-center">
-          {/* {socialLinks.map(({ href, icon: Icon, label }) => (
-            <a
-              key={label}
-              href={href}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={label}
-            >
-              <Icon size={24} />
-            </a>
-          ))} */}
+          <a
+            href="#projects"
+            className="text-white hover:text-blue-400 text-lg"
+          >
+            Projects
+          </a>
+          <a
+            href="#publications"
+            className="text-white hover:text-blue-400 text-lg"
+          >
+            Publications
+          </a>
+
+          {/* Social links */}
           {socialLinks.map((link, index) => (
             <a
               key={index}
@@ -60,12 +55,12 @@ function Header() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={link.label}
-              className="text-white hover:text-gray-300 text-2xl transition-colors duration-300"
+              className={`text-white ${link.hoverColor} text-2xl transition-colors duration-300`}
             >
               <link.icon size={24} />
             </a>
           ))}
-        </nav>
+        </div>
 
         {/* Mobile menu button */}
         <button
@@ -77,17 +72,35 @@ function Header() {
         </button>
       </div>
 
+      {/* Mobile menu */}
       {menuOpen && (
         <nav className="md:hidden bg-gray-800 border-t border-gray-700">
           <div className="flex flex-col space-y-4 p-4 text-center text-white">
-            {socialLinks.map(({ href, icon: Icon, label }) => (
+            {/* Navigation links */}
+            <a
+              href="https://drive.google.com/file/d/1qhEUFfQzxkDBKCSfiYTEmSwKIjkWc3Iu/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-400"
+            >
+              Resume
+            </a>
+            <a href="#projects" className="hover:text-blue-400">
+              Projects
+            </a>
+            <a href="#publications" className="hover:text-blue-400">
+              Publications
+            </a>
+
+            {/* Social links */}
+            {socialLinks.map(({ href, icon: Icon, label, hoverColor }) => (
               <a
                 key={label}
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={label}
-                className="flex items-center justify-center space-x-2"
+                className={`flex items-center justify-center space-x-2 text-white ${hoverColor} transition-colors duration-300`}
               >
                 <Icon size={24} />
                 <span>{label}</span>
