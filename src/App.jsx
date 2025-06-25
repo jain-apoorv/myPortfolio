@@ -388,7 +388,7 @@ function App() {
         <Section
           title="Projects"
           id="projects"
-          description="Some of the projects I have worked on recently. Click on the card to see details."
+          description="Some of the projects I have worked on recently."
           items={projects}
           setSelectedItem={setSelectedItem}
         />
