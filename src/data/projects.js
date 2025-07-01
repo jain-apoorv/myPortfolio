@@ -39,6 +39,7 @@ export const projects = [
       "Integrated Raspberry Pi, Arduino Uno, and Pi Camera to capture and process images in real-time.",
     ],
     pdf: "https://drive.google.com/file/d/1clVjHdSsIKcav_8WJN1Rm1e62v3c32ck/view",
+    video: "https://www.youtube.com/watch?v=7NqHL7tLg7s",
     type: "project",
   },
 ];

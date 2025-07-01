@@ -4,6 +4,7 @@ import {
   FaBookOpen,
   FaFilePowerpoint,
   FaFilePdf,
+  FaVideo,
 } from "react-icons/fa";
 
 function Modal({ item, onClose }) {
@@ -100,6 +101,17 @@ function Modal({ item, onClose }) {
                 >
                   <FaFilePdf size={20} />
                   <span>Pdf</span>
+                </a>
+              )}
+              {item.video && (
+                <a
+                  href={item.video}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-2 px-4 py-2 bg-purple-600 rounded hover:bg-purple-700 transition"
+                >
+                  <FaVideo size={20} />
+                  <span>Video</span>
                 </a>
               )}
             </div>
